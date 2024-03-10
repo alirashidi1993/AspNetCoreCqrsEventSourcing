@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="autofac" Version="7.1.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="MediatR.Extensions.Autofac.DependencyInjection" Version="11.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Auction.Application\Auction.Application.csproj" />
+    <ProjectReference Include="..\Auction.Infrastructure.Persistence.ES\Auction.Infrastructure.Persistence.ES.csproj" />
+    <ProjectReference Include="..\Framework.EventStore\Framework.EventStore.csproj" />
+    <ProjectReference Include="..\Framework.Persistence.ES\Framework.Persistence.ES.csproj" />
+  </ItemGroup>
+
+</Project>
